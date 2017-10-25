@@ -1,0 +1,39 @@
+/*-----Header-----*/
+header {
+    background-color: white;
+    margin: 1rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 2rem;
+}
+
+.logo .title {
+    display: inline;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.title #title-bold {
+    font-weight: 700;
+}
+
+.title #title-light {
+    font-weight: 300;
+}
+
+header nav a {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    text-decoration: none;
+}
