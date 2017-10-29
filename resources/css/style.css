@@ -1,3 +1,25 @@
+/*-----Global CSS-----*/
+html {
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: "Garamond";
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+p {
+  font-family: "Garamond";
+  line-height: 1.5rem;
+}
+
 /*-----Header-----*/
 header {
   background-color: white;
@@ -23,165 +45,151 @@ header {
   text-transform: uppercase;
 }
 
-.title #title-bold {
+.title #bold {
   font-weight: 700;
 }
 
-.title #title-light {
+.title #light {
   font-weight: 300;
 }
 
-header nav a {
-  margin-left: 1rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.03rem;
-  text-decoration: none;
+nav {
+  font-size: 1.25rem;
+  padding-right: 1.5rem;
 }
 
-/* LEARN */
-.learn-wrapper {
-  background-color: darkgray;
+nav ul {
   display: flex;
-  flex-direction: row;
-}
-
-.learn-wrapper .image-wrapper {
-  flex-direction: column;
-  width: 60%;
-  display: flex;
-
-}
-
-.learn-wrapper .image-wrapper img {
-  max-width: 100%;
-  height: auto;
-  padding: 2rem 1rem 2rem 1.5rem;
-}
-
-.text-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 5rem 2rem;
-  margin-left: 1rem;
-  width: 28%;
-  float: right;
+  justify-content: space-between;
 }
 
-#header-text {
-    font-weight: 700;
-    font-size: 2.5rem;
+nav ul li {
+  padding-left: 1rem;
+}
+
+/*     LEARN    */
+.learn-wrapper {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+}
+
+.learn-wrapper .left-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-wrapper .left-wrapper img {
+    max-width: 100%;
+    height: auto;
+    padding: 2rem 1rem 2rem 1.5rem;
+}
+
+.learn-wrapper .right-wrapper {
+    float: right;
+    clear: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    margin-left: 1rem;
+    width: 28%;
+}
+
+.learn h2 {
     line-height: 3rem;
     color: #33322E;
     padding-bottom: 2rem;
 }
 
-#description {
-    font-weight: 100;
-    font-size: 0.9rem;
+.learn h3 {
     line-height: 1.2;
     padding-bottom: 2rem;
 }
 
-.start-button {
+.start-btn {
 	border: none;
 	overflow: hidden;
 	width: auto;
-  height: auto;
-  text-align: center;
-  padding: 0.5rem 1rem;
+    height: auto;
+    text-align: center;
+    padding: 0.5rem 1rem;
 }
 
-.start-button a {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-  border-radius: 0.1rem;
-  text-decoration: none;
-  width: 100%;
-  height: 113%;
-  padding: 0.5rem 2rem;
-  position: relative;
+.start-btn a {
+    font-family: "Georgia";
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    color: #33322E;
+    border-radius: 0.1rem;
+    text-decoration: none;
+    width: 100%;
+    height: 113%;
+    padding: 0.5rem 2rem;
+    position: relative;
+}
+
+.start-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /* PRACTICE */
-.practice-wrapper {
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: row;
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 2px 0;
+}
+.left-wrapper {
+  max-width: 58%;
+  max-height: 100%;
+  padding: 2rem 1.5rem;
+}
+.info-txt h2 {
+  padding: 2rem 0 1.5rem 0;
+}
+.info-txt p {
+  margin-bottom: 2rem;
+}
+.info-txt span {
+  font-size: .75rem;
+  padding-top: 2rem;
+}
+.right-wrapper {
+  max-width: 40%;
+  max-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.info {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.info img {
+  max-width: 35%;
+  height: auto;
 }
 
-.practice-wrapper .column-left-wrapper {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    padding-right: 1.5rem;
-    border-right: 1px solid lightgray;
+.orientation {
+  padding-top: 0;
 }
-
-.practice-wrapper .column-left-wrapper img {
-    max-width: 100%;
-    height: auto;
-    padding: 2rem 0 2rem 1.5rem;
-
+.campus a {
+  color: #FFD8B2;
 }
-
-.practice-wrapper .column-left-wrapper #header-text {
-    padding: 1rem 0 1.5rem 1.5rem;
+.info-text {
+  padding: 0rem 1.5rem;
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.practice-wrapper .column-left-wrapper #desc-text {
-    padding-left: 1.5rem;
-}
-
-.practice-wrapper .column-left-wrapper p {
-    font-size: 0.8rem;
-    text-align: right;
-    padding: 1rem 0 1.5rem 1.5rem;
-}
-
-.practice-wrapper .column-right-wrapper {
-    padding: 1rem 0 2rem 0;
-    width: 40%;
-    height: 100%;
-}
-
-.practice-wrapper .info-row {
-    display: inline-flex;
-    border-bottom: 1px solid lightgray;
-}
-
-.practice-wrapper .info-row img {
-    width: 35%;
-    height: 35%;
-    padding: 1rem 1rem;
-}
-
-.practice-wrapper .info-box {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 1rem;
-}
-
-.practice-wrapper .info-box #desc-text {
-    width: 80%;
-    padding: 0.5rem 0;
-}
-
-#info-title {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-#read-more a {
-    font-size: 0.8rem;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-#read-more a:hover {
-    text-decoration: underline;
+.info-text p {
+  padding: 8px 0;
 }
