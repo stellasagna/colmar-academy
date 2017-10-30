@@ -70,7 +70,7 @@ nav ul li {
 
 /*     LEARN    */
 .learn-wrapper {
-    background-color: darkgray;
+    background-color: lightgray;
     display: flex;
     flex-direction: row;
 }
@@ -192,4 +192,88 @@ nav ul li {
 }
 .info-text p {
   padding: 8px 0;
+}
+
+/*     COURSES     */
+.courses {
+    background-color: lightgray;
+    padding: 0 4rem 2rem 4rem;
+}
+
+#courses-header h2 {
+    padding: 2rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.courses-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#course-box {
+    width: 30%;
+    height: auto;
+    background-color: white;
+    margin: 0 2rem 2rem 0;
+}
+
+#course-box img {
+    width: 100%;
+    height: auto;
+}
+
+#course-description {
+    background-color: white;
+    font-family: "Garamond";
+    font-weight: 200;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    width: 90%;
+    padding: 1rem 0 1rem 1rem;
+}
+
+#course-description #course-title {
+    font-family: "Georgia";
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#course-description p {
+    color: dimgrey;
+    font-weight: 400;
+    line-height: 2;
+}
+
+#course-description #course-info {
+    display: inline-block;
+    width: 100%;
+}
+
+#course-description #course-info #course-list {
+    width: 100%;
+}
+
+#course-description #course-info #course-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    line-height: 2.5;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+    padding: 0.25rem 0.5rem;
+    margin: 0.05rem;
+    width: auto;
+    border-radius: 1rem;
+    transition: all 400ms ease-in 10ms;
+}
+
+#course-description #course-info #course-list a:hover {
+    text-decoration: none;
+    background-color: darkslategray;
+    border: 1px solid darkslategray;
+    color: white;
 }
