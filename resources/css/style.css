@@ -7,26 +7,33 @@ h2 {
   font-family: "Georgia";
   font-weight: 700;
   font-size: 2.5rem;
+  color: #30232e;
 }
 
 h3 {
   font-family: "Garamond";
   font-weight: 100;
   font-size: 1rem;
+  color: #33322E;
 }
 
 p {
   font-family: "Garamond";
   line-height: 1.5rem;
+  color: #33322E;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #30232e;
 }
 
 a:hover {
-    color: darkslategray;
+    color: #833e76;
+}
+
+span {
+  color: dimgray;
 }
 
 
@@ -45,7 +52,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.5rem 0 0.5rem 1.5rem;
 }
 
 .logo img {
@@ -87,7 +94,7 @@ nav ul li {
 
 /*     LEARN    */
 .learn-wrapper {
-    background-color: lightgray;
+    background-color: #b1adb1;
     display: flex;
     flex-direction: row;
 }
@@ -118,7 +125,6 @@ nav ul li {
 
 .learn h2 {
     line-height: 3rem;
-    color: #33322E;
     padding-bottom: 2rem;
 }
 
@@ -221,7 +227,7 @@ nav ul li {
 
 /*     COURSES     */
 .courses {
-    background-color: lightgray;
+    background-color: #b1adb1;
     padding: 0 4rem 2rem 4rem;
 }
 
@@ -283,23 +289,22 @@ nav ul li {
 
 #course-description #course-info #course-list a {
     text-decoration: none;
-    color: black;
+    color: #30232e;
     font-weight: 200;
     line-height: 2.5;
     background-color: #ffffff;
-    color: black;
-    border: 1px solid black;
+    color: #33322E;
+    border: 1px solid #30232e;
     padding: 0.25rem 0.5rem;
     margin: 0.05rem;
     width: auto;
     border-radius: 1rem;
-    transition: all 400ms ease-in 10ms;
+    transition: all 300ms ease-in-out 10ms;
 }
 
 #course-description #course-info #course-list a:hover {
     text-decoration: none;
-    background-color: darkslategray;
-    border: 1px solid darkslategray;
+    background-color: #b1adb1;
     color: white;
 }
 
@@ -378,7 +383,7 @@ nav ul li {
 }
 
 .exhibit-wrapper .right-wrapper .article img {
-    width: 35%;
+    width: 27%;
     height: auto;
     padding: 0.5rem 1rem;
 }
@@ -416,7 +421,7 @@ footer {
 
 footer nav a {
     text-decoration: none;
-    color: black;
+    color: #30232e;
     padding: 0 0.25rem;
 }
 
