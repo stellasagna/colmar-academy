@@ -20,19 +20,32 @@ p {
   line-height: 1.5rem;
 }
 
-/*-----Header-----*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+    color: darkslategray;
+}
+
+
+/*     Header     */
 header {
   background-color: white;
-  margin: 1rem 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  opacity: 0.7;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .logo img {
@@ -47,14 +60,17 @@ header {
 
 .title #bold {
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .title #light {
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 nav {
-  font-size: 1.25rem;
+  font-family: Georgia;
+  font-size: .9rem;
   padding-right: 1.5rem;
 }
 
@@ -67,6 +83,7 @@ nav ul {
 nav ul li {
   padding-left: 1rem;
 }
+
 
 /*     LEARN    */
 .learn-wrapper {
@@ -84,7 +101,7 @@ nav ul li {
 .learn-wrapper .left-wrapper img {
     max-width: 100%;
     height: auto;
-    padding: 2rem 1rem 2rem 1.5rem;
+    padding: 4rem 1rem 2rem 1.5rem;
 }
 
 .learn-wrapper .right-wrapper {
@@ -144,7 +161,7 @@ nav ul li {
   align-items: stretch;
   margin: 2px 0;
 }
-.left-wrapper {
+.information .left-wrapper {
   max-width: 58%;
   max-height: 100%;
   padding: 2rem 1.5rem;
@@ -153,13 +170,13 @@ nav ul li {
   padding: 2rem 0 1.5rem 0;
 }
 .info-txt p {
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
 }
 .info-txt span {
   font-size: .75rem;
   padding-top: 2rem;
 }
-.right-wrapper {
+.information .right-wrapper {
   max-width: 40%;
   max-height: 100%;
   display: flex;
@@ -167,11 +184,24 @@ nav ul li {
   flex-direction: column;
   padding: 2rem 0;
 }
+
+.information .right-wrapper h3 {
+  font-size: 1.5rem;
+}
+.information .right-wrapper p {
+  font-size: 1rem;
+}
+
+.information .right-wrapper a {
+  font-size: .75rem;
+}
+
 .info {
   display: flex;
   align-items: center;
   padding: 1rem;
 }
+
 .info img {
   max-width: 35%;
   height: auto;
@@ -180,18 +210,13 @@ nav ul li {
 .orientation {
   padding-top: 0;
 }
-.campus a {
-  color: #FFD8B2;
-}
+
 .info-text {
   padding: 0rem 1.5rem;
   max-width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.info-text p {
-  padding: 8px 0;
 }
 
 /*     COURSES     */
@@ -284,7 +309,7 @@ nav ul li {
 }
 
 .thesis-exhibits h2 {
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 1.5rem 0;
     margin: 0 auto;
     text-align: center;
 }
@@ -322,24 +347,24 @@ nav ul li {
 }
 
 .exhibit-wrapper .left-wrapper p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     padding: 0.5rem 0 1.5rem 1.5rem;
 }
 
 .exhibit-wrapper .right-wrapper {
-    padding: 2.5rem 0 2rem 0;
+    padding: 0 0 2rem 0;
     width: 60%;
     height: auto;
     border: none;
 }
 
 .exhibit-wrapper .right-wrapper h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .exhibit-wrapper .right-wrapper p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .exhibit-wrapper .right-wrapper a {
@@ -355,7 +380,7 @@ nav ul li {
 .exhibit-wrapper .right-wrapper .article img {
     width: 35%;
     height: auto;
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .exhibit-wrapper .right-wrapper .article-txt {
@@ -374,4 +399,31 @@ nav ul li {
     font-family: "Georgia";
     font-size: 1.25rem;
     font-weight: 500;
+}
+
+/*    FOOTER    */
+footer {
+    padding: 1rem 1rem 1.5rem 1.5rem;
+    border-top: 1px solid lightgray;
+    font-family: "Garamond";
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: dimgray;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 0.25rem;
+}
+
+footer nav a:hover {
+    color: darkslategray;
+}
+
+footer #copyright-txt {
+  font-style: italic;
 }
