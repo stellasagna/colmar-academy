@@ -12,7 +12,7 @@ h2 {
 h3 {
   font-family: "Garamond";
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 p {
@@ -276,4 +276,102 @@ nav ul li {
     background-color: darkslategray;
     border: 1px solid darkslategray;
     color: white;
+}
+
+/*     THESIS EXHIBITS     */
+.thesis-exhibits {
+    background-color: #f2f2f2;
+}
+
+.thesis-exhibits h2 {
+    padding: 2rem 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.exhibit-wrapper {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+}
+
+.exhibit-wrapper .left-wrapper {
+    width: 62.5%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+}
+
+.exhibit-wrapper .left-wrapper video {
+    max-width: 100%;
+    height: auto;
+    padding: 0 0 0 1.5rem;
+}
+
+.exhibit-wrapper .left-wrapper h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem 0 0 1.5rem;
+    display: block;
+}
+
+.exhibit-wrapper .left-wrapper #desc-text {
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.exhibit-wrapper .left-wrapper p {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.5rem 0 1.5rem 1.5rem;
+}
+
+.exhibit-wrapper .right-wrapper {
+    padding: 2.5rem 0 2rem 0;
+    width: 60%;
+    height: auto;
+    border: none;
+}
+
+.exhibit-wrapper .right-wrapper h3 {
+  font-size: 1.3rem;
+}
+
+.exhibit-wrapper .right-wrapper p {
+  font-size: 0.8rem;
+}
+
+.exhibit-wrapper .right-wrapper a {
+  font-size: 0.8rem;
+}
+
+.exhibit-wrapper .right-wrapper .article {
+    display: inline-flex;
+    width: 100%;
+    border: none;
+}
+
+.exhibit-wrapper .right-wrapper .article img {
+    width: 35%;
+    height: auto;
+    padding: 1.5rem 1rem;
+}
+
+.exhibit-wrapper .right-wrapper .article-txt {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.exhibit-wrapper .right-wrapper .article-txt #desc-text {
+    padding: 0.5rem 0;
+}
+
+.exhibit-wrapper .right-wrapper #info-title {
+    font-family: "Georgia";
+    font-size: 1.25rem;
+    font-weight: 500;
 }
