@@ -91,6 +91,9 @@ nav ul li {
   padding-left: 1rem;
 }
 
+.mobile-nav {
+  display: none;
+}
 
 /*     LEARN    */
 .learn-wrapper {
@@ -161,6 +164,9 @@ nav ul li {
 }
 
 /* PRACTICE */
+.mobile-info {
+  display: none;
+}
 .information {
   display: flex;
   justify-content: space-between;
@@ -217,7 +223,7 @@ nav ul li {
   padding-top: 0;
 }
 
-.info-text {
+.info-txt {
   padding: 0rem 1.5rem;
   max-width: 65%;
   display: flex;
@@ -293,7 +299,6 @@ nav ul li {
     font-weight: 200;
     line-height: 2.5;
     background-color: #ffffff;
-    color: #33322E;
     border: 1px solid #30232e;
     padding: 0.25rem 0.5rem;
     margin: 0.05rem;
@@ -306,6 +311,10 @@ nav ul li {
     text-decoration: none;
     background-color: #b1adb1;
     color: white;
+}
+
+.mobile-courses-wrapper {
+  display: none;
 }
 
 /*     THESIS EXHIBITS     */
@@ -406,6 +415,9 @@ nav ul li {
     font-weight: 500;
 }
 
+.mobile-exhibit-wrapper {
+  display: none;
+}
 /*    FOOTER    */
 footer {
     padding: 1rem 1rem 1.5rem 1.5rem;
@@ -426,9 +438,171 @@ footer nav a {
 }
 
 footer nav a:hover {
-    color: darkslategray;
+    color: #b1adb1;
 }
 
 footer #copyright-txt {
   font-style: italic;
+}
+
+/*     SCREEN OPTIMIZATION     */
+@media only screen and (max-width: 480px) {
+  /*MOBILE HEADER*/
+  .logo,
+  .desktop-nav {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*MOBILE LEARN SECTION*/
+  .learn {
+    background-color: darkgray;
+    height: 36rem;
+    width: 100%;
+  }
+
+  .learn-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .learn-wrapper img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: -2rem;
+    left: -1.5rem;
+    align-self: center;
+  }
+
+  .learn .right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin-top: -1rem;
+    width: 80%;
+  }
+
+  .learn .right-wrapper h2 {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #33322E;
+  }
+
+  .learn .right-wrapper h3 {
+    font-family: "Garamond";
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: -1rem;
+    margin-bottom: -0.75rem;
+  }
+
+  /*MOBILE PRACTICE SECTION*/
+  .left-wrapper {
+    display: none;
+  }
+  .right-wrapper {
+    width: 100%;
+  }
+
+  .right-wrapper,
+  .info {
+    max-width: 100%;
+  }
+
+  .guest {
+    border-bottom: none;
+  }
+  .orientation,
+  .right-wrapper {
+    border: none;
+  }
+
+  .info img.desktop-info {
+    display: none;
+  }
+  .info img.mobile-info {
+    display: block;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .info img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .info-txt {
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+
+    /*MOBILE COURSES SECTION*/
+    /*hides desktop version*/
+    .courses-wrapper {
+      display: none;
+    }
+    /*code for mobile version*/
+    .mobile-courses-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #mobile-course a {
+      font-family: "Garamond";
+      text-decoration: none;
+      color: #30232e;
+      background-color: lightgray;
+      line-height: 3.5;
+      border-radius: 0.5rem;
+      width: 100%;
+      padding: 1rem;
+      transition: all 300ms ease-in-out 10ms;
+    }
+
+    #mobile-course a:hover {
+      color: #ffffff;
+      background-color: ##b1adb1;
+    }
+    /*MOBILE THESIS EXHIBIT SECTION*/
+    /*hides desktop version*/
+    .exhibit-wrapper {
+      display: none;
+    }
+    /*code for mobile version*/
+    .mobile-exhibit-wrapper {
+      display: block;
+      max-width: 100%;
+  }
+
+  #copyright {
+    padding: 2rem 0 0 0;
+    margin-bottom: -1.5rem
+  }
+
+  /*MOBILE FOOTER*/
+  #footer-nav {
+    display: none;
+  }
 }

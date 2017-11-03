@@ -18,17 +18,25 @@
       </div>
     </div>
     <nav>
-      <ul class="nav-desktop">
+      <ul class="desktop-nav">
         <li><a href="#">On Campus</a></span>
         <li><a href="#">Online</a></span>
         <li><a href="#">For Companies</a></span>
         <li><a href="#">Sign In</a></span>
       </ul>
     </nav>
+
+    <!-----mobile version----->
+    <nav class="mobile-nav">
+      <span class="icon-nav"><a href="#"><img src="./resources/images/ic-logo.svg"></a></span>
+      <span class="icon-nav"><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></span>
+      <span class="icon-nav"><a href="#"><img src="./resources/images/ic-online.svg"></a></span>
+      <span class="icon-nav"><a href="#"><img src="./resources/images/ic-login.svg"></a></span>
+    </nav>
   </header>
 
   <!----------               lEARN SECTION               ---------->
-  <section class="learn">
+  <div class="learn">
       <div class="learn-wrapper">
         <div class="left-wrapper">
           <img src="./resources/images/banner.jpg">
@@ -39,7 +47,7 @@
           <button class="start-btn"><a href="#">Start Here</a></button>
         </div>
       </div>
-  </section>
+  </div>
 
   <!----------                 PRACTICE SECTION               ---------->
   <div class="information">
@@ -56,8 +64,9 @@
     <div class="right-wrapper">
       <!--article 1-->
       <div class="orientation info">
-        <img src="./resources/images/information-orientation.jpg">
-        <div class="info-text">
+        <img class="desktop-info" src="./resources/images/information-orientation.jpg">
+        <img class="mobile-info" src="./resources/images/information-orientation-mobile.jpg">
+        <div class="info-txt">
           <h3>Orientation date</h3>
           <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
           <span><a href="#">Read more</a></span>
@@ -65,8 +74,9 @@
       </div>
       <!--article 2-->
       <div class="campus info">
-        <img src="./resources/images/information-campus.jpg">
-        <div class="info-text">
+        <img class="desktop-info" src="./resources/images/information-campus.jpg">
+        <img class="mobile-info" src="./resources/images/information-campus-mobile.jpg">
+        <div class="info-txt">
           <h3>Our campus</h3>
           <p>Find which campus is close by you</p>
           <span><a href="#">Read more</a></span>
@@ -74,8 +84,9 @@
       </div>
       <!--article 3-->
       <div class="guest info">
-        <img src="./resources/images/information-guest-lecture.jpg">
-        <div class="info-text">
+        <img class="desktop-info" src="./resources/images/information-guest-lecture.jpg">
+        <img class="mobile-info" src="./resources/images/information-guest-lecture-mobile.jpg">
+        <div class="info-txt">
           <h3>Our guest lecture</h3>
           <p>Join a keynote with Oliver Sack about music in medical treatment</p>
           <span><a href="#">Read more</a></span>
@@ -83,6 +94,8 @@
       </div>
     </div>
   </div>
+
+  <!-----     mobile version     ----->
 
 
 <!----------               CLASSES               ---------->
@@ -172,8 +185,17 @@
           </div>
         </div>
       </div>
-
     </div>
+  </div>
+
+  <!-----mobile version----->
+  <div class="mobile-courses-wrapper">
+    <div id="mobile-course"><a href="#">Software Engineering</a></div>
+    <div id="mobile-course"><a href="#">Computer Art</a></div>
+    <div id="mobile-course"><a href="#">Visual Design</a></div>
+    <div id="mobile-course"><a href="#">Data Analysis</a></div>
+    <div id="mobile-course"><a href="#">Business Foundations</a></div>
+    <div id="mobile-course"><a href="#">Marketing Strategies</a></div>
   </div>
 
   <!----------               THESIS EXHIBITS                ---------->
@@ -208,6 +230,12 @@
       </div>
     </div>
   </div>
+
+  <!-----mobile version----->
+  <div class="mobile-exhibit-wrapper">
+    <video src="./resources/videos/thesis.mp4" width="100%" controls></video>
+  </div>
+
   <!----------                FOOTER               =--------->
   <footer>
     <div id="copyright">
